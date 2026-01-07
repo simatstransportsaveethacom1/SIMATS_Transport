@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SIMATS Transport</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <style>
+        p {
+            display: block;
+        }
+
+        #imageModal.modal.show .modal-dialog {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #imageModal.modal.show .modal-dialog .modal-content {
+            background: none !important;
+            border-radius: 0 !important;
+            max-width: 340px !important;
+            padding: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="viewPass.html">
+            <div class="logo">
+                <img src="img/logo.png" alt="SIMATS Logo">
+                <h1>SIMATS TRANSPORTS</h1>
+            </div>
+        </a>
+        <!-- <button class="navbar-toggler" style="margin-right:5px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav-links">
+                <li class="nav-item "> <a href="viewPass.html" style="text-decoration: none">Home</a> </li>
+				 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bus-search " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pass Details
+                    </a>
+                    <div class="dropdown-menu pass-req" aria-labelledby="navbarDropdown">
+                       
+                                                     <!-- <a class="dropdown-item " href="bus_search.php">Pass Request</a>
+
+                        <a class="dropdown-item " href="#">Renew Pass</a> -->
+
+                        <a class="dropdown-item " href="payment.html">Payment Status</a>
+                        <!-- <a class="dropdown-item " href="viewPass.html">View Pass</a> -->
+                    </div>
+                </li>
+				 <!-- <li class="nav-item "> <a href="payment.html" style="text-decoration: none">Payment Status</a> </li> -->
+                   <li class="nav-item active"> <a href="notification2.html" style="text-decoration: none">Notification</a> </li>
+                <!--<li class="nav-item "> <a href="checkbuscount.html" style="text-decoration: none">Check Availability</a> </li>-->
+                <li class="nav-item "> <a href="feedback2.html" style="text-decoration: none">Raise Issue</a> </li>
+                <li class="nav-item "> <a href="daily-attendance.html" style="text-decoration: none">Attendance</a> </li>
+                <li class="nav-item "> <a href="contactdetails.html" style="text-decoration: none">Contact</a> </li>
+            </ul>
+            <ul class="form-inline right-nav my-2 my-lg-0 ps-0">
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pe-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <img src="image/ProImage.jpg" class="header-img"> -->
+                    <img src="image/profile-image.png" alt="profile" class="header-img">
+                    </a>
+                    <div class="dropdown-menu prof-drop" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="profile2.html">Profile</a>
+                        <a class="dropdown-item" href="changepassword2.html">Change Password</a>
+                        <a class="dropdown-item" href="updateprofile.html">Change Profile Picture</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link log-out" href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>Logout</span></a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        
+
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title d-sm-block" id="offcanvas">&nbsp;</h6>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body px-0">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                    <!-- <li class="nav-item">
+                        <a href="studentHomePage.html" class="nav-link text-truncate">
+                        <img src="img/home.png" /><span class="ms-3 d-sm-inline">Home</span>
+                        </a>
+                    </li> -->
+
+                    <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle  text-truncate dropbtn" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-labelledby="dropdown">
+                    <img src="img/pass.jpeg" /><span class="ms-3 d-sm-inline"> Pass Details</span>
+                    </a>
+                        <ul class="dropdown-menu dropdown-content" aria-labelledby="dropdown">
+                                                   
+                            <li><a class="dropdown-item" href="payment.html">Payment Status</a></li>
+                            
+                        </ul>
+                    </li>
+                   <!-- <li>
+                        <a href="payment.php" class="nav-link text-truncate">
+                        <img src="img/pass.jpeg" /><span class="ms-3 d-sm-inline">Payment Status</span> </a>
+                    </li>
+                     <li>
+                        <a href="notification2.php" class="nav-link text-truncate">
+                        <img src="img/notification.png" /><span class="ms-3 d-sm-inline">Notification</span></a>
+                    </li> 
+                    <li>
+                        <a href="checkbuscount.php" class="nav-link text-truncate">
+                        <img src="img/complaint.png" /><span class="ms-3 d-sm-inline">Check Availability</span></a>
+                    </li>-->
+                    <li>
+                        <a href="feedback2.html" class="nav-link text-truncate">
+                        <img src="img/notification.png" /><span class="ms-3 d-sm-inline">Raise Issue</span></a>
+                    </li>
+                     <li>
+                        <a href="daily-attendance.html" class="nav-link text-truncate">
+                        <img src="img/attendance-info.png" /><span class="ms-3 d-sm-inline">Attendance</span> </a>
+                    </li>
+					 <li>
+                        <a href="contactdetails.html" class="nav-link text-truncate">
+                        <img src="img/contact-icon.png" width="50" height="50" /><span class="ms-3 d-sm-inline">Contact</span> </a>
+                    </li>
+                    <!--<li>
+                        <a href="changepassword2.php" class="nav-link text-truncate">
+                        <img src="img/change.jpeg" /><span class="ms-3 d-sm-inline">Change Password</span> </a>
+                    </li>
+                    <li>
+                        <a href="updateprofile.php" class="nav-link text-truncate">
+                        <img src="img/change.jpeg" /><span class="ms-3 d-sm-inline">Change Profile Picture</span> </a>
+                    </li> -->
+                    <li>
+                        <a href="index.html" class="nav-link text-truncate">
+                        <img src="img/logout.png" /><span class="ms-3 d-sm-inline">Logout</span> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <button class="btn float-end mob-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+            <i class="fa fa-bars fs-3" aria-hidden="true" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+        </button>
+
+
+    </div>
+</header>
+
+<style>
+.nav-links {
+    margin-top: 5px;
+}
+.nav-link.dropdown-toggle.bus-search {
+    position: relative;
+    color: #fff !important;
+}
+.nav-link.dropdown-toggle.bus-search:hover {
+    position: relative;
+    color: #fff !important;
+    transition: all 300ms ease-in;
+}
+
+.pass-req .dropdown-item{
+    box-shadow: none;
+    border-bottom: 1px solid #f2f2f2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.dropdown-toggle.bus-search.active{
+    background: #418bed;
+    color: #fff !important;
+} 
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left:10px;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: #418bed;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+    $(".dropdown-bs-toggle").dropdown();
+});
+</script>
+
+<script>
+    $(document).ready(function() {
+        // Toggle dropdown submenu on click
+        $('.dropdown').on('click', function() {
+            $(this).find('.dropdown-menu').toggle();
+        });
+    });
+</script>
+    <div class="">
+        <div class="mb-4">
+            <div class="container">
+                <h3 style="text-align: center; color: #418bed; font-size: 18px;">Notification</h3>
+
+                <div class="slider-section">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                                                                    <div class="carousel-item active">
+                                            <!-- Wrap each image inside an anchor tag with a class -->
+                                            <a href="#" class="image-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="notification_img/07.08.2025 Drop 3.15 .jpeg">
+                                                <img class="d-block w-100" src="notification_img/07.08.2025 Drop 3.15 .jpeg" alt="Slide">
+                                            </a>
+                                        </div>
+                                                                            <div class="carousel-item ">
+                                            <!-- Wrap each image inside an anchor tag with a class -->
+                                            <a href="#" class="image-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="notification_img/07.08.2025 Drop 4.45 SEC.jpeg">
+                                                <img class="d-block w-100" src="notification_img/07.08.2025 Drop 4.45 SEC.jpeg" alt="Slide">
+                                            </a>
+                                        </div>
+                                                                            <div class="carousel-item ">
+                                            <!-- Wrap each image inside an anchor tag with a class -->
+                                            <a href="#" class="image-link" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="notification_img/07.08.2025 Drop 4.45.jpeg">
+                                                <img class="d-block w-100" src="notification_img/07.08.2025 Drop 4.45.jpeg" alt="Slide">
+                                            </a>
+                                        </div>
+                                                            </div>
+                    </div>
+                </div>
+
+                <div class="notif-scroll">
+                    <div class="daily-update"><p><b>Date:</b> 2025-08-07</p><p><b>Message:</b> 07.08.2025 Drop </p></div>                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; SIMATS - 2024
+    </footer>
+    <div class="bottom-footer">
+    <div class="container">
+        <ul>
+            <!-- <li><a href="feedback2.html"><img src="img/f1.png" alt="f1"/></a></li>
+            <li><a href="index.html"><img src="img/f2.png" alt="f2"/></a></li> -->
+            <li><a href="profile2.html"><img src="img/user-prof.png" alt="f2"/></a></li>
+            <li><a href="viewPass.html" class="mob-home"><img src="img/f5.png" alt="f5"/></a></li>
+            <li><a href="notification2.html"><img src="img/f3.png" alt="f3"/></a></li> 
+            <!-- <li><a href="index.html"><img src="img/f4.png" alt="f4"/></a></li> -->
+        </ul>
+    </div>
+</div>
+    <!-- Modal markup at the end of the body -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="" class="img-fluid" id="modalImage" alt="Clicked Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // JavaScript to handle click event on images and display modal
+            $('.image-link').click(function() {
+                var imageUrl = $(this).data('img');
+                $('#modalImage').attr('src', imageUrl);
+            });
+        });
+    </script>
+</body>
+
+</html>

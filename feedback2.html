@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SIMATS Transport</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+    <div class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="viewPass.html">
+            <div class="logo">
+                <img src="img/logo.png" alt="SIMATS Logo">
+                <h1>SIMATS TRANSPORTS</h1>
+            </div>
+        </a>
+        <!-- <button class="navbar-toggler" style="margin-right:5px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav-links">
+                <li class="nav-item "> <a href="viewPass.html" style="text-decoration: none">Home</a> </li>
+				 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bus-search " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pass Details
+                    </a>
+                    <div class="dropdown-menu pass-req" aria-labelledby="navbarDropdown">
+                       
+                                                     <!-- <a class="dropdown-item " href="bus_search.html">Pass Request</a>
+
+                        <a class="dropdown-item " href="#">Renew Pass</a> -->
+                        <a class="dropdown-item " href="payment.html">Payment Status</a>
+                        <!-- <a class="dropdown-item " href="viewPass.html">View Pass</a> -->
+                    </div>
+                </li>
+				 <!-- <li class="nav-item "> <a href="payment.html" style="text-decoration: none">Payment Status</a> </li> -->
+                   <li class="nav-item "> <a href="notification2.html" style="text-decoration: none">Notification</a> </li>
+                <!--<li class="nav-item "> <a href="checkbuscount.html" style="text-decoration: none">Check Availability</a> </li>-->
+                <li class="nav-item active"> <a href="feedback2.html" style="text-decoration: none">Raise Issue</a> </li>
+                <li class="nav-item "> <a href="daily-attendance.html" style="text-decoration: none">Attendance</a> </li>
+				<li class="nav-item "> <a href="contactdetails.html" style="text-decoration: none">Contact</a> </li>
+            </ul>
+            <ul class="form-inline right-nav my-2 my-lg-0 ps-0">
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pe-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <img src="image/ProImage.jpg" class="header-img"> -->
+                    <img src="image/profile-image.png" alt="profile" class="header-img">
+                    </a>
+                    <div class="dropdown-menu prof-drop" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="profile2.html">Profile</a>
+                        <a class="dropdown-item" href="changepassword2.html">Change Password</a>
+                        <a class="dropdown-item" href="updateprofile.html">Change Profile Picture</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link log-out" href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>Logout</span></a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        
+
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title d-sm-block" id="offcanvas">&nbsp;</h6>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body px-0">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                    <!-- <li class="nav-item">
+                        <a href="studentHomePage.html" class="nav-link text-truncate">
+                        <img src="img/home.png" /><span class="ms-3 d-sm-inline">Home</span>
+                        </a>
+                    </li> -->
+
+                    <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle  text-truncate dropbtn" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-labelledby="dropdown">
+                    <img src="img/pass.jpeg" /><span class="ms-3 d-sm-inline"> Pass Details</span>
+                    </a>
+                        <ul class="dropdown-menu dropdown-content" aria-labelledby="dropdown">
+                                                   
+                            <li><a class="dropdown-item" href="payment.html">Payment Status</a></li>
+                            
+                        </ul>
+                    </li>
+                   <!-- <li>
+                        <a href="payment.html" class="nav-link text-truncate">
+                        <img src="img/pass.jpeg" /><span class="ms-3 d-sm-inline">Payment Status</span> </a>
+                    </li>
+                     <li>
+                        <a href="notification2.html" class="nav-link text-truncate">
+                        <img src="img/notification.png" /><span class="ms-3 d-sm-inline">Notification</span></a>
+                    </li> 
+                    <li>
+                        <a href="checkbuscount.html" class="nav-link text-truncate">
+                        <img src="img/complaint.png" /><span class="ms-3 d-sm-inline">Check Availability</span></a>
+                    </li>-->
+                    <li>
+                        <a href="feedback2.html" class="nav-link text-truncate">
+                        <img src="img/notification.png" /><span class="ms-3 d-sm-inline">Raise Issue</span></a>
+                    </li>
+                     <li>
+                        <a href="daily-attendance.html" class="nav-link text-truncate">
+                        <img src="img/attendance-info.png" /><span class="ms-3 d-sm-inline">Attendance</span> </a>
+                    </li>
+					 <li>
+                        <a href="contactdetails.html" class="nav-link text-truncate">
+                        <img src="img/contact-icon.png" width="50" height="50" /><span class="ms-3 d-sm-inline">Contact</span> </a>
+                    </li>
+                    <!--<li>
+                        <a href="changepassword2.html" class="nav-link text-truncate">
+                        <img src="img/change.jpeg" /><span class="ms-3 d-sm-inline">Change Password</span> </a>
+                    </li>
+                    <li>
+                        <a href="updateprofile.html" class="nav-link text-truncate">
+                        <img src="img/change.jpeg" /><span class="ms-3 d-sm-inline">Change Profile Picture</span> </a>
+                    </li> -->
+                    <li>
+                        <a href="index.html" class="nav-link text-truncate">
+                        <img src="img/logout.png" /><span class="ms-3 d-sm-inline">Logout</span> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <button class="btn float-end mob-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+            <i class="fa fa-bars fs-3" aria-hidden="true" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+        </button>
+
+
+    </div>
+</header>
+
+<style>
+.nav-links {
+    margin-top: 5px;
+}
+.nav-link.dropdown-toggle.bus-search {
+    position: relative;
+    color: #fff !important;
+}
+.nav-link.dropdown-toggle.bus-search:hover {
+    position: relative;
+    color: #fff !important;
+    transition: all 300ms ease-in;
+}
+
+.pass-req .dropdown-item{
+    box-shadow: none;
+    border-bottom: 1px solid #f2f2f2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.dropdown-toggle.bus-search.active{
+    background: #418bed;
+    color: #fff !important;
+} 
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left:10px;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: #418bed;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+    $(".dropdown-bs-toggle").dropdown();
+});
+</script>
+
+<script>
+    $(document).ready(function() {
+        // Toggle dropdown submenu on click
+        $('.dropdown').on('click', function() {
+            $(this).find('.dropdown-menu').toggle();
+        });
+    });
+</script>
+    <div class="bus-detail">
+        <div class="container">
+		
+            <h3 style="text-align: center; color: #418bed; font-size: 18px;"><b>Raise Issue</b></h3>
+            <div class="change-password">
+                <div class="container">
+
+                    <form id="add-employee-form" action="feedprocess2.html" method="POST">
+                        <a href="feedback-status.html" class="notif-action">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            <span id="feedbackCount" class="badge">0</span>
+                        </a>
+                        <div class="form-group mb-3">
+                            <label for="feedbackType">Issue Type</label>
+                            <select id="feedbackType" name="feedbackType" class="form-control" required>
+								<option value="">Select Type</option>
+                              
+                                <option value="Hygiene">Hygiene</option>
+                                <option value="Accessibility">Accessibility</option>
+                                <option value="Bus Pass">Bus Pass</option>
+                                <option value="Payment">Payment</option>
+                                <option value="Route">Route</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" rows="5" cols="100" class="form-control" autocomplete="off" required></textarea>
+                        </div>
+                        <div class="centered-form">
+                            <button type="submit" class="add-bus-btn">Submit</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+<footer>
+        &copy; SIMATS - 2024
+</footer> 
+
+<!-- script to hide right click inspect -->
+<script>
+    // Function to enter full-screen mode
+    function enterFullScreen() {
+        var element = document.documentElement;
+        var requestMethod = element.requestFullscreen || element.webkitRequestFullscreen || element.mozRequestFullScreen || element.msRequestFullscreen;
+
+        if (requestMethod) {
+            requestMethod.call(element);
+        }
+    }
+
+    // Function to disable right-click and inspect key combinations
+    function preventDeveloperTools() {
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function(e) {
+            // Prevent F12, Ctrl+Shift+I, Ctrl+Shift+C, Ctrl+Shift+J, Ctrl+U, Cmd+Opt+I
+            if (
+                e.keyCode == 123 || // F12 key
+                (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) || // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+                (e.ctrlKey && e.keyCode == 85) || // Ctrl+U
+                (e.metaKey && e.altKey && e.keyCode == 73) // Cmd+Opt+I (for Mac)
+            ) {
+                return false;
+            }
+        };
+    }
+
+    // Disable copy-paste
+    // document.addEventListener('cut', function (e) {
+    //     e.preventDefault();
+    // });
+    // document.addEventListener('copy', function (e) {
+    //     e.preventDefault();
+    // });
+    // document.addEventListener('paste', function (e) {
+    //     e.preventDefault();
+    // });
+
+    // Call necessary functions on page load
+    window.onload = function() {
+        enterFullScreen();
+        preventDeveloperTools();
+    };
+</script>    <div class="bottom-footer">
+    <div class="container">
+        <ul>
+            <!-- <li><a href="feedback2.html"><img src="img/f1.png" alt="f1"/></a></li>
+            <li><a href="index.html"><img src="img/f2.png" alt="f2"/></a></li> -->
+            <li><a href="profile2.html"><img src="img/user-prof.png" alt="f2"/></a></li>
+            <li><a href="viewPass.html" class="mob-home"><img src="img/f5.png" alt="f5"/></a></li>
+            <li><a href="notification2.html"><img src="img/f3.png" alt="f3"/></a></li> 
+            <!-- <li><a href="index.html"><img src="img/f4.png" alt="f4"/></a></li> -->
+        </ul>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        // AJAX call to fetch feedback count
+        $.ajax({
+            url: 'getFeedbackCount.html',
+            success: function(count) {
+                $('#feedbackCount').text(count);
+            }
+        });
+    });
+</script>
+
+</html>
